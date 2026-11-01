@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>后台保活说明</title><style>:root{color-scheme:light dark;--bg:#fff;--fg:#1c1c1e;--muted:#6e6e73}
+@media (prefers-color-scheme:dark){:root{--bg:#000;--fg:#f2f2f7;--muted:#a1a1a6}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}h1{font-size:26px;margin:0 0 8px}h2{font-size:19px;margin:28px 0 8px}
+h3{font-size:16px;margin:18px 0 6px}p,li{margin:6px 0}ul{padding-left:22px}.meta{color:var(--muted)}
+a{color:inherit}footer{margin-top:40px;font-size:13px;color:var(--muted)}</style></head><body><main>
+<h1>后台保活说明</h1>
+<p class="meta">更新日期：2026 年 11 月 1 日<br>生效日期：2026 年 11 月 1 日</p>
+<p>本说明介绍本应用的“定位保活”功能：它做什么、为什么需要定位权限、如何对待您的位置，以及您如何开启和关闭。本说明是《隐私政策》的组成部分，本说明未涉及的事项适用《隐私政策》。</p>
+<p>在阅读全文前，请您特别注意以下要点：</p>
+<ul><li><strong>“定位保活”默认关闭。只有您在“设置 → 定位保活”中主动打开后，本应用才会使用定位。</strong></li><li><strong>开启后，本应用仅在 AI 回答尚未写完、而您切换到其他应用或锁屏时使用低精度定位，目的是让本应用在后台继续运行；回答写完或您回到本应用时立即停止。</strong></li><li><strong>本应用不使用、不保存、不上传您的位置，也不将位置用于其他任何用途。</strong></li><li><strong>不开启“定位保活”不影响本应用的其他功能，但切换到后台后，回答通常会在约 30 秒内被系统停止。</strong></li></ul>
+<h2>一、为什么需要“定位保活”</h2>
+<p>AI 回答由您的设备直接与您选择的服务提供方通信生成，生成过程中本应用必须保持运行。iOS 在应用切换到后台后，一般只允许其继续运行约 30 秒，之后会将其暂停；设备可用内存较少时，暂停可能更早发生。暂停后，正在写的回答会中断。</p>
+<p>我们未设立服务器，无法在服务器上替您继续生成回答。iOS 允许正在使用定位的应用在后台继续运行，“定位保活”利用这一机制，让回答在您切换到后台后也能继续写完。</p>
+<h2>二、开启后本应用做什么</h2>
+<ul><li>开启时，本应用将请求“使用 App 期间”的定位权限。是否授权由您决定，您可以随时在 iOS“设置”中更改。</li><li>仅当 AI 回答尚未写完、而本应用即将离开前台时，本应用开始使用定位；所有回答写完、出错或被停止，或您回到本应用时，立即停止使用定位。</li><li>本应用请求的是最低精度（约 3 公里）的定位，以尽量减少耗电。</li><li>使用定位期间，iOS 会在屏幕顶部（灵动岛或状态栏）显示定位图标，提示有应用正在使用您的位置。</li></ul>
+<h2>三、我们如何对待您的位置</h2>
+<ul><li>系统提供给本应用的位置信息，本应用不使用、不保存，也不上传至任何服务器或服务提供方，不用于广告、统计或其他任何用途。</li><li>您的位置不会被包含在发送给 AI 服务提供方的内容中。</li><li>我们未设立服务器，无法获取您的位置。</li></ul>
+<h2>四、对电量的影响</h2>
+<p>在后台持续运行和使用定位会增加耗电，回答写得越久，耗电越多。如您更在意电量，可以不开启本功能，或在回答写完前回到本应用。</p>
+<h2>五、提醒通知</h2>
+<p>在“设置 → 定位保活”中，您还可以开启“每做完一步响一声”和“全部写完时提醒”。开启时，本应用将请求通知权限。本应用不在前台时，以系统通知的方式提醒您：响铃模式下有提示音，静音模式下震动，以您的系统设置为准。</p>
+<p>通知内容仅包含对话标题和进度说明，由 iOS 在本设备上显示，不会发送给我们或任何第三方。您回到本应用时，本应用将清除已显示的此类通知。</p>
+<h2>六、如何关闭</h2>
+<ul><li>在“设置 → 定位保活”中关闭开关，本应用即不再使用定位；</li><li>您也可以在 iOS“设置 → 隐私与安全性 → 定位服务”中关闭本应用的定位权限，或在 iOS“设置 → 通知”中关闭本应用的通知。</li></ul>
+<p>关闭后，回答在您切换到后台后可能在约 30 秒内被系统停止，您回到本应用后可以重新发送。</p>
+<h2>七、联系我们</h2>
+<p>如您对本说明有任何疑问，请通过电子邮箱 49400854q@gmail.com 与我们联系。</p>
+<footer><p>本网站由 GitHub Pages 托管。访问本网站时，GitHub 会出于安全目的记录访问者的 IP 地址，详见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p></footer>
+</main></body></html>
